@@ -16,4 +16,4 @@ docker run \
     -e PGDATA=/var/lib/postgresql/data/pgdata \
     -p 5432:5432 \
     -v $data_dir:/var/lib/postgresql/data/pgdata \
-    postgres:10-alpine
+    postgres:alpine
