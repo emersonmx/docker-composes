@@ -10,7 +10,6 @@ mkdir -p $data_dir
 docker run \
     -d \
     -it \
-    --rm \
     --name $service_name \
     -e POSTGRES_USER=postgres \
     -e POSTGRES_PASSWORD=secret \

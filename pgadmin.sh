@@ -10,7 +10,6 @@ mkdir -p $data_dir
 docker run \
     -d \
     -it \
-    --rm \
     --name $service_name \
     -e PGADMIN_DEFAULT_EMAIL=admin \
     -e PGADMIN_DEFAULT_PASSWORD=secret \

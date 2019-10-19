@@ -10,7 +10,6 @@ mkdir -p $data_dir
 docker run \
     -d \
     -it \
-    --rm \
     --name $service_name \
     -e MYSQL_ROOT_PASSWORD=secret \
     -p 3306:3306 \

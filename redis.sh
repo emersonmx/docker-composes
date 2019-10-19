@@ -10,7 +10,6 @@ mkdir -p $data_dir
 docker run \
     -d \
     -it \
-    --rm \
     --name $service_name \
     -p 6379:6379 \
     -v $data_dir:/data \
