@@ -10,7 +10,6 @@ action=$1
 
 scripts=(
     ./mariadb.sh
-    ./pgadmin.sh
     ./pgsql.sh
     ./redis.sh
 )
