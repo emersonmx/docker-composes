@@ -45,6 +45,10 @@ function update_service() {
     build_service
 }
 
+function shell_service() {
+    docker exec -it $service_name bash
+}
+
 case $1 in
     build )
         build_service
@@ -64,6 +68,9 @@ case $1 in
         ;;
     update )
         update_service
+        ;;
+    shell )
+        shell_service
         ;;
     * )
         echo "Action not found!"

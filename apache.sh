@@ -46,6 +46,10 @@ function update_service() {
     docker pull $image
 }
 
+function shell_service() {
+    docker exec -it $service_name bash
+}
+
 case $1 in
     start )
         start_service
@@ -62,6 +66,9 @@ case $1 in
         ;;
     update )
         update_service
+        ;;
+    shell )
+        shell_service
         ;;
     * )
         echo "Action not found!"
