@@ -1,4 +1,3 @@
-mariadb/
-pgadmin/
-pgsql/
-redis/
+data/mariadb/
+data/pgsql/
+data/redis/

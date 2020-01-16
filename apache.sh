@@ -10,7 +10,7 @@ script_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 service_name=apache
 image=httpd:2.4
-data_dir="$script_dir/$service_name"
+data_dir="$script_dir/data/$service_name"
 webroot="$HOME/code/projects/php"
 
 action=$1

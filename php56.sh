@@ -10,7 +10,7 @@ script_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 service_name=php56
 image=$service_name-custom
-data_dir="$script_dir/$service_name"
+data_dir="$script_dir/data/$service_name"
 
 action=$1
 

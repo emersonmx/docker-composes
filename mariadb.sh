@@ -10,7 +10,7 @@ script_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 service_name=mariadb
 image=mariadb
-data_dir="$script_dir/$service_name/data"
+data_dir="$script_dir/data/$service_name/data"
 mkdir -p $data_dir
 
 action=$1
