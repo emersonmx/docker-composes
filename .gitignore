@@ -1,3 +1,4 @@
-data/mariadb/
-data/pgsql/
-data/redis/
+.env
+mariadb/
+pgsql/
+redis/
