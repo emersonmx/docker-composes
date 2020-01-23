@@ -55,7 +55,7 @@ services:
 
   php72:
     build:
-      context: ./php71
+      context: ./php72
     working_dir: /code
     volumes:
       - ${WEB_ROOT}:/code
