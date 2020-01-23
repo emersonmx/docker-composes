@@ -7,5 +7,4 @@ container_name="$(get_container_name $0)"
 
 echo 'Upload configs...'
 docker cp "$service_path/php.ini" $container_name:/usr/local/etc/php/
-docker cp "$service_path/www.conf" $container_name:/usr/local/etc/php-fpm.d/www.conf
 echo 'Done.'
