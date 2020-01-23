@@ -37,7 +37,23 @@ services:
     volumes:
       - ${WEB_ROOT}:/code
 
+  nginx:
+    build:
+      context: ./nginx
+    ports:
+      - "80:80"
+    working_dir: /code
+    volumes:
+      - ${WEB_ROOT}:/code
+
   php71:
+    build:
+      context: ./php71
+    working_dir: /code
+    volumes:
+      - ${WEB_ROOT}:/code
+
+  php72:
     build:
       context: ./php71
     working_dir: /code
