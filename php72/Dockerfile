@@ -20,8 +20,8 @@ RUN apt-get update \
         libicu-dev zlib1g-dev postgresql-server-dev-all \
         libmagickwand-dev \
     && apt-get install -y libfreetype6 libjpeg62-turbo libpng16-16 \
-        libicu63 libltdl7 zlib1g libpq5 libxml2 \
-        libmagickwand-6.q16-6 \
+        libicu57 libltdl7 zlib1g libpq5 libxml2 \
+        libmagickwand-6.q16-3 \
         iproute2 \
     && rm -rf /var/lib/apt/lists/* \
     && apt-get autoremove -y
