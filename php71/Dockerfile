@@ -31,7 +31,7 @@ RUN if [ ${INSTALL_BCMATH} = true ]; then \
 ARG INSTALL_MYSQLI=false
 
 RUN if [ ${INSTALL_MYSQLI} = true ]; then \
-    docker-php-ext-install mysqli \
+    docker-php-ext-install pdo_mysql mysqli \
 ;fi
 
 ###########################################################################
@@ -154,7 +154,7 @@ RUN apt search postgresql-server-dev
 RUN if [ ${INSTALL_PGSQL} = true ]; then \
     apt-get -y install postgresql-server-dev-11 && \
     # Install the pgsql extension
-    docker-php-ext-install pgsql \
+    docker-php-ext-install pdo_pgsql pgsql \
 ;fi
 
 ###########################################################################
@@ -213,7 +213,7 @@ RUN if [ ${INSTALL_COMPOSER} = true ]; then \
 #
 
 COPY ./laravel.ini /usr/local/etc/php/conf.d
-COPY ./xlaravel.pool.conf /usr/local/etc/php-fpm.d/
+COPY ./xlaravel.pool.conf /usr/local/etc/php-fpm.d/www.conf
 
 USER root
 
