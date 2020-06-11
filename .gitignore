@@ -1,4 +1,1 @@
 .env
-mariadb/
-pgsql/
-redis/
